@@ -2,6 +2,14 @@
 //handle submit 
 
  function search(){
+  var name =  document.getElementById("name");
+  name.innerText = "";
+  var bio =  document.getElementById("bio");
+  bio.innerText = "";
+  var url =  document.getElementById("url");
+  url.innerText = "";
+
+
   var username = git_user.value;
    // Make a request for a user with a given ID
   axios.get('https://api.github.com/users/' + username)
